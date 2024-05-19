@@ -7,9 +7,9 @@ class MyThread implements Runnable{
    public static void main(String[] args){
      MyThread t=new MyThread();
      Thread th=new Thread(t);
-     AnotherThread t1=new AnotherThread();
+     AnotherThread tuly=new AnotherThread();
      th.start();
-     t1.start();
+     tuly.start();
 
    }
 }
