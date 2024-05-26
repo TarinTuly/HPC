@@ -14,10 +14,11 @@ class MyThread implements Runnable{
         public static void main(String[] args) {
             MyThread t1=new MyThread();
             Thread thread=new Thread(t1);
-            Another t2=new Another();
+            AnotherThread t2=new AnotherThread();
             Thread thr=new Thread(t2);
-            thr.start();
+          
             thread.start();
+            thr.start();
                
 
        }
